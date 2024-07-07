@@ -96,7 +96,7 @@
     background-color: #F3FF35;
 }
 
-@media (max-width:350px) {
+@media (max-width:767px) {
     html, body {
         overflow-x: hidden;
     }
