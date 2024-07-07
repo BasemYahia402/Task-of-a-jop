@@ -29,9 +29,71 @@ body {
 .swiper-pagination-bullet {
     width: 3rem;
     height: 3px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.397);
     margin: 0 5px;
     border-radius: 0;
+    transition: background-color 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+    position: relative;
+}
+
+.swiper-pagination-bullet-active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0px;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+    animation: fillAnimation 4s linear;
+}
+
+@keyframes fillAnimation {
+    0% {
+        width: 0;
+    }
+
+    10% {
+        width: calc(3rem * 0.1);
+    }
+
+    20% {
+        width: calc(3rem * 0.2);
+    }
+
+    30% {
+        width: calc(3rem * 0.3);
+    }
+
+    40% {
+        width: calc(3rem * 0.4);
+    }
+
+    50% {
+        width: calc(3rem * 0.5);
+    }
+
+    60% {
+        width: calc(3rem * 0.6);
+    }
+
+    70% {
+        width: calc(3rem * 0.7);
+    }
+
+    80% {
+        width: calc(3rem * 0.8);
+    }
+
+    90% {
+        width: calc(3rem * 0.9);
+    }
+
+    100% {
+        width: 3rem;
+    }
 }
 
 .bg-darkGray {
