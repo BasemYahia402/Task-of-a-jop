@@ -1,5 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Function to toggle dropdown menu visibility
+  const menuButton = document.getElementById("mobile-menu-button");
+  const mobileMenu = document.querySelector(".mobile-menu");
+  const cancelButton = document.getElementById("mobile-menu-cancel-button");
+
   const toggleDropdown = (event) => {
     event.preventDefault();
     const dropdownMenu = event.target.nextElementSibling;
@@ -32,19 +35,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  const menuButton = document.getElementById("mobile-menu-button");
-  const mobileMenu = document.querySelector(".mobile-menu");
-  const cancelButton = document.getElementById("mobile-menu-cancel-button");
-
   menuButton.addEventListener("click", function () {
     mobileMenu.classList.toggle("translate-x-full");
-    document.body.style.overflowX = "hidden";
     cancelButton.classList.remove("hidden");
   });
 
   cancelButton.addEventListener("click", function () {
     mobileMenu.classList.toggle("translate-x-full");
-    document.body.style.overflowX = "";
     cancelButton.classList.add("hidden");
   });
 
