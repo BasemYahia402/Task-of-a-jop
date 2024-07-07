@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body class="text-white overflow-x-hidden">
-    <header class="py-4 bg-darkGray fixed top-0 left-0 w-full z-50">
+    <header class="py-4 bg-darkGray">
       <div class="container mx-auto px-4 flex justify-between items-center">
         <div class="text-2xl font-bold">FOCAL</div>
         <button
@@ -37,11 +37,9 @@
         <nav
           class="lg:flex lg:space-y-0 space-y-2 absolute lg:relative lg:flex-row flex-col bg-white lg:bg-transparent lg:text-white text-black z-10 right-0 top-0 justify-start lg:justify-between p-5 lg:p-0 h-auto lg:h-10 lg:items-center lg:w-3/5 w-full mobile-menu transform translate-x-full lg:translate-x-0 transition-transform duration-300 ease-in-out"
         >
-          <!-- Your navigation links here -->
           <div class="relative">
-            <a href="#" class="hover:text-gray-400 dropdown-toggle">
-              Shop by Category
-              <i class="fa-solid fa-caret-down ml-2"></i>
+            <a href="#" class="hover:text-gray-400 dropdown-toggle"
+              >Shop by Category<i class="fa-solid fa-caret-down ml-2"></i>
             </a>
             <div
               class="absolute hidden bg-black text-white pt-2 mt-1 rounded shadow-lg dropdown-menu z-10"
@@ -59,10 +57,9 @@
           </div>
 
           <div class="relative">
-            <a href="#" class="hover:text-gray-400 dropdown-toggle">
-              Shop by Device
-              <i class="fa-solid fa-caret-down ml-2"></i>
-            </a>
+            <a href="#" class="hover:text-gray-400 dropdown-toggle"
+              >Shop by Device<i class="fa-solid fa-caret-down ml-2"></i
+            ></a>
             <div
               class="absolute hidden bg-black text-white pt-2 mt-1 rounded shadow-lg dropdown-menu z-10"
             >
@@ -75,10 +72,9 @@
           <a href="#" class="hover:text-gray-400">Blog</a>
 
           <div class="relative">
-            <a href="#" class="hover:text-gray-400 dropdown-toggle">
-              United States (USD $)
-              <i class="fa-solid fa-caret-down ml-2"></i>
-            </a>
+            <a href="#" class="hover:text-gray-400 dropdown-toggle"
+              >United States (USD $)<i class="fa-solid fa-caret-down ml-2"></i
+            ></a>
             <div
               class="absolute hidden bg-black text-white pt-2 mt-1 rounded shadow-lg dropdown-menu z-10"
             >
@@ -112,16 +108,15 @@
         </nav>
       </div>
     </header>
-
-    <main class="mt-16">
-      <div class="swiper-container">
+    <main>
+      <div class="swiper-container h-screen">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="relative">
+          <div class="swiper-slide h-full">
+            <div class="relative h-full">
               <img
                 src="images/1.webp"
                 alt="Slide Image 1"
-                class="object-fill"
+                class="object-cover w-full h-full"
               />
               <div
                 class="absolute inset-0 flex items-center justify-start md:px-20 px-10"
@@ -141,12 +136,12 @@
             </div>
           </div>
 
-          <div class="swiper-slide">
-            <div class="relative">
+          <div class="swiper-slide h-full">
+            <div class="relative h-full">
               <img
                 src="images/2.webp"
                 alt="Slide Image 2"
-                class="object-fill"
+                class="object-cover w-full h-full"
               />
               <div
                 class="absolute inset-0 flex items-center justify-start md:px-20 px-10"
@@ -166,12 +161,12 @@
             </div>
           </div>
 
-          <div class="swiper-slide">
-            <div class="relative">
+          <div class="swiper-slide h-full">
+            <div class="relative h-full">
               <img
                 src="images/3.webp"
                 alt="Slide Image 2"
-                class="object-fill"
+                class="object-cover w-full h-full"
               />
               <div
                 class="absolute inset-0 flex items-center justify-start md:px-20 px-10"
@@ -199,7 +194,6 @@
         </div>
       </div>
     </main>
-
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="scripts/index.js"></script>
   </body>
