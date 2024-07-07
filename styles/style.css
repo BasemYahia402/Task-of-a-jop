@@ -4,14 +4,6 @@
 @tailwind utilities;
 
 
-html, body {
-    overflow-x: hidden;
-}
-
-body {
-    position: relative
-}
-
 .animate-in {
     opacity: 0;
     transform: translateY(100%);
@@ -102,4 +94,14 @@ body {
 
 .bg-yellow-green {
     background-color: #F3FF35;
+}
+
+@media (max-width:350px) {
+    html, body {
+        overflow-x: hidden;
+    }
+
+    body {
+        position: relative
+    }
 }
