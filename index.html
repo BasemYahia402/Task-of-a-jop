@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="content of description" />
+    <meta name="copyright" content="Your Company Or Brand Name" />
+    <meta name="author" content="Basem" />
+    <title>Replica - Focal Carbon Theme</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body class="text-white overflow-x-hidden">
+    <header class="py-4 bg-darkGray">
+      <div class="container mx-auto px-4 flex justify-between items-center">
+        <div class="text-2xl font-bold">FOCAL</div>
+        <button
+          class="text-white block lg:hidden focus:outline-none"
+          id="mobile-menu-button"
+        >
+          <i class="fas fa-bars fa-lg"></i>
+        </button>
+
+        <nav
+          class="lg:flex lg:space-y-0 space-y-2 absolute lg:relative lg:flex-row flex-col bg-white lg:bg-transparent lg:text-white text-black z-10 right-0 top-0 justify-start lg:justify-between p-5 lg:p-0 h-80 lg:h-10 lg:items-center lg:w-3/5 w-full mobile-menu transform translate-x-full lg:translate-x-0 transition-transform duration-300 ease-in-out"
+        >
+          <div class="relative">
+            <a href="#" class="hover:text-gray-400 dropdown-toggle"
+              >Shop by Category<i class="fa-solid fa-caret-down ml-2"></i>
+            </a>
+            <div
+              class="absolute hidden bg-black text-white pt-2 mt-1 rounded shadow-lg dropdown-menu z-10"
+            >
+              <a href="#" class="block px-4 py-2 hover:bg-gray-700"
+                >Category 1</a
+              >
+              <a href="#" class="block px-4 py-2 hover:bg-gray-700"
+                >Category 2</a
+              >
+              <a href="#" class="block px-4 py-2 hover:bg-gray-700"
+                >Category 3</a
+              >
+            </div>
+          </div>
+
+          <div class="relative">
+            <a href="#" class="hover:text-gray-400 dropdown-toggle"
+              >Shop by Device<i class="fa-solid fa-caret-down ml-2"></i
+            ></a>
+            <div
+              class="absolute hidden bg-black text-white pt-2 mt-1 rounded shadow-lg dropdown-menu z-10"
+            >
+              <a href="#" class="block px-4 py-2 hover:bg-gray-700">Device 1</a>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-700">Device 2</a>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-700">Device 3</a>
+            </div>
+          </div>
+          <a href="#" class="hover:text-gray-400">Collections</a>
+          <a href="#" class="hover:text-gray-400">Blog</a>
+
+          <div class="relative">
+            <a href="#" class="hover:text-gray-400 dropdown-toggle"
+              >United States (USD $)<i class="fa-solid fa-caret-down ml-2"></i
+            ></a>
+            <div
+              class="absolute hidden bg-black text-white pt-2 mt-1 rounded shadow-lg dropdown-menu z-10"
+            >
+              <a href="#" class="block px-4 py-2 hover:bg-gray-700">100$</a>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-700">200$</a>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-700">300$</a>
+            </div>
+          </div>
+
+          <a href="#" class="hover:text-gray-400 w-full lg:w-auto block py-2"
+            ><i class="fas fa-envelope"></i
+          ></a>
+          <a href="#" class="hover:text-gray-400 w-full lg:w-auto block py-2"
+            ><i class="fas fa-search"></i
+          ></a>
+          <a href="#" class="hover:text-gray-400 w-full lg:w-auto block py-2"
+            ><i class="fas fa-user"></i
+          ></a>
+          <a href="#" class="hover:text-gray-400 w-full lg:w-auto block py-2"
+            ><i class="fas fa-shopping-cart"></i
+          ></a>
+
+          <button
+            class="text-black block lg:hidden focus:outline-none absolute top-1 right-4"
+            id="mobile-menu-cancel-button"
+          >
+            <i class="fas fa-times fa-lg"></i>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <div class="swiper-container h-screen">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide h-full">
+          <div class="relative h-full">
+            <img
+              src="images/1.webp"
+              alt="Slide Image 1"
+              class="object-cover w-full h-full"
+            />
+            <div
+              class="absolute inset-0 flex items-center justify-start md:px-20 px-10"
+            >
+              <div class="animated-text">
+                <p class="mb-6 font-bold">NEW IN</p>
+                <h2 class="text-4xl md:text-6xl font-bold lg:w-3/5">
+                  NATIVE UNION X TOM DIXON
+                </h2>
+                <a
+                  href="#"
+                  class="mt-8 inline-block bg-yellow-green text-black py-2 px-4"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide h-full">
+          <div class="relative h-full">
+            <img
+              src="images/2.webp"
+              alt="Slide Image 2"
+              class="object-cover w-full h-full"
+            />
+            <div
+              class="absolute inset-0 flex items-center justify-start md:px-20 px-10"
+            >
+              <div class="animated-text">
+                <p class="mb-6 font-bold">COLLABORATION</p>
+                <h2 class="text-4xl md:text-6xl font-bold lg:w-3/5">
+                  NATIVE UNION X TOM DIXON
+                </h2>
+                <a
+                  href="#"
+                  class="mt-8 inline-block bg-yellow-green text-black py-2 px-4"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide h-full">
+          <div class="relative h-full">
+            <img
+              src="images/3.webp"
+              alt="Slide Image 2"
+              class="object-cover w-full h-full"
+            />
+            <div
+              class="absolute inset-0 flex items-center justify-start md:px-20 px-10"
+            >
+              <div class="animated-text">
+                <p class="mb-6 font-bold">PREMIUM COLLECTION</p>
+                <h2 class="text-4xl md:text-6xl font-bold lg:w-3/5">
+                  NATIVE UNION X TOM DIXON
+                </h2>
+                <a
+                  href="#"
+                  class="mt-8 inline-block bg-yellow-green text-black py-2 px-4"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-pagination flex justify-center space-x-2">
+        <span class="swiper-pagination-bullet"></span>
+        <span class="swiper-pagination-bullet"></span>
+        <span class="swiper-pagination-bullet"></span>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
